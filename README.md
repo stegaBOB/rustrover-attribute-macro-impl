@@ -1,3 +1,5 @@
+MRE for https://youtrack.jetbrains.com/issue/RUST-17417/Attribute-macros-that-modify-self-in-impl-blocks-break-code-completion
+
 With RustRover, if you have an attribute macro that acts on an impl block and modifies the item being impl'd on, the
 code completion for fields and methods suggest on the original item, not the modified one from the macro. Rust-analyzer
 currently handles this properly.
